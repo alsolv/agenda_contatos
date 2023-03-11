@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="container">
+    <header>
+        <img src="/imagem/icon.png" alt="simbolo de adicionar contatos telefonicos">
+        <h1>Adicionar contatos</h1>
+    </header>
+    <form id="form-atividade">
+        <input type="text" id="nome-contato" required placeholder="Nome">
+        <input type="tel" minlength="15" maxlength="15" id="number-contato" placeholder="Seu celular com DDD" onkeyup="handlePhone(event)"/>
+        <button type="submit" >Adicionar</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nome do contato</th>
+                <th>Numero do contato do contato</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
